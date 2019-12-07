@@ -1,0 +1,29 @@
+{
+  "name": "advent-of-code-2019",
+  "version": "0.1.0",
+  "author": "Natalie Johnson",
+  "license": "MIT",
+  "description": "Advent of Code 2019",
+  "dependencies": {
+    "@types/lodash": "^4.14.149",
+    "lodash": "^4.17.15"
+  },
+  "devDependencies": {
+    "@types/chai": "4.2.6",
+    "@types/mocha": "5.2.7",
+    "chai": "4.2.0",
+    "mocha": "6.2.2",
+    "ts-node": "^8.5.4",
+    "typescript": "^3.7.2"
+  },
+  "scripts": {
+    "compile": "rm -rf build && tsc",
+    "run": "npm run 1",
+    "test": "mocha -r ts-node/register */**/*.spec.ts"
+  },
+  "nyc": {
+    "require": [
+      "ts-node/register"
+    ]
+  }
+}
